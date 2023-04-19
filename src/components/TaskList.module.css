@@ -1,0 +1,46 @@
+.wrapper {
+  margin-top: calc(0px - 1.5rem - 2px);
+}
+
+.wrapper form {
+  width: 100%;
+  height: 3.375rem;
+  margin-bottom: 4rem;
+
+  display: flex;
+  gap: 0.5rem;
+}
+
+.wrapper form input {
+  flex: 1;
+  padding: 0 1rem;
+  border-radius: 8px;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  color: var(--white);
+}
+
+.wrapper form button[type=submit] {
+  padding: 1rem;
+  border-radius: 8px;
+  border: 0;
+  background: var(--blue-dark);
+  color: var(--white);
+  font-weight: bold;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  transition: background-color 0.1s;
+}
+
+.wrapper form button[type=submit]:not(:disabled):hover {
+  background-color: var(--blue);
+}
+
+.wrapper form button[type=submit]:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
