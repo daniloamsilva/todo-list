@@ -44,3 +44,27 @@
   opacity: 0.7;
   cursor: not-allowed;
 }
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.625rem;
+}
+
+.info span {
+  margin-left: 0.5rem;
+  padding: 0.125rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--gray-200);
+  background: var(--gray-400);
+  border-radius: 8px;
+}
+
+.info strong.created {
+  color: var(--blue);
+}
+
+.info strong.done {
+  color: var(--purple);
+}
